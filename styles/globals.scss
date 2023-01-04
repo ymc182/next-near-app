@@ -18,8 +18,11 @@
 	width: 500px;
 	height: 350px;
 	position: absolute;
-	top: 25%;
-	left: 10%;
+	top: 15%;
+	left: 5%;
+	@media screen and (max-width: 746px) {
+		display: none;
+	}
 }
 .landing-image-area-image-large {
 	width: 400px;
@@ -43,10 +46,43 @@
 }
 .landing-title-area {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 15%;
+	right: 5%;
+	display: flex;
+	flex-direction: column;
 }
 .landing-title-text-main {
+	font-size: 6em;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 .landing-title-text-title {
+	text-transform: capitalize;
+	font-size: 4.5em;
+	justify-self: end;
+	align-self: flex-end;
+	font-weight: bold;
+}
+.landing-title-text-company {
+	text-transform: capitalize;
+	font-size: 1.5em;
+	justify-self: end;
+	align-self: center;
+}
+.landing-vertical-text {
+	position: absolute;
+	top: 20%;
+	left: 2%;
+	font-size: 6em;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	@media screen and (max-height: 750px) {
+		font-size: 5em;
+	}
+	@media screen and (max-height: 650px) {
+		font-size: 4em;
+	}
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
 }
